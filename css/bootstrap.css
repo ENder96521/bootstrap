@@ -5,6 +5,16 @@ body {
     margin: 0;
 }
 
+td div {
+    overflow: hidden;
+}
+
+th div {
+    overflow: hidden;
+}
+
+
+
 .banner {
     position: relative;
     
@@ -178,6 +188,10 @@ body {
         height: 35px;
         line-height: 35px;
         font-size: 16px;
+    }
+
+    .productImg {
+        width: 100%;
     }
 }
 
