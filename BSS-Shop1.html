@@ -1,0 +1,293 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Bootstrap demo</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <link rel="stylesheet" href="./css/bootstrap.css">
+  </head>
+  <body>
+    <nav class="navbar navbar-expand-lg">
+        <div class="container">
+          <a class="navbar-brand" href="#">
+            <img src="./img/logo/logo1.png" alt="Bootstrap" width="85" height="72" style="border-radius: 50%;">
+          </a>
+          <button class="navbar-toggler btn btn-light bg-light" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse justify-content-end" id="navbarSupportedContent">
+            <ul class="navbar-nav ml-auto mb-2 mb-lg-0 ">
+                <li class="nav-item">
+                    <a class="nav-link text-light hover" aria-current="page" href="#">Shop all</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link text-light hover" href="#">Collections</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link text-light hover" href="#">Calendar</a>
+                </li>
+                <li class="nav-item ">
+                    <a class="nav-link text-light hover" href="#">Trending</a>
+                </li>
+                <li class="nav-item text-light">
+                    <a class="nav-link text-light" href="#">
+                        <i class="bi bi-cart4"></i>
+                    </a>
+                </li>
+                <li class="nav-item text-light dropdown">
+                    <a class="nav-link text-light" href="#" dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                        <i class="bi bi-person-circle"></i>
+                    </a>
+                    <ul class="dropdown-menu" style="left: -100px;">
+                        <li>
+                            <a class="dropdown-item" href="./Bootstrap登入頁.html">login</a>
+                        </li>
+                    </ul>
+                </li>
+            </ul>
+          </div>
+        </div>
+    </nav>
+    <main class="container-fluid p-0">
+        <div class="bg-light myheight d-flex justify-content-center align-items-center p-sm-0 px-5 ">
+            <div class="bg-light p-5 shadow-lg container-md" style="height: 90%;  margin: 50px 0px;">
+                <h3 class="mb-5">購物車</h3>
+                <div class="row position-relative d-flex justify-content-center align-items-center">
+                    <div class="col-3 d-flex justify-content-center align-items-center flex-column">
+                        <div class="bg-dark mycircle text-light  text-center mb-1 myitem">1</div>
+                        <p class="text-nowrap myfont">確認購物車</p>
+                    </div>
+                    <div class="col-3 d-flex justify-content-center align-items-center flex-column">
+                        <div class="progress p-0  position-absolute mywidth-1" role="progressbar" style="top:16%; left: 21%; height: 10%; width: 8%;">
+                            <div class="progress-bar" style="width: 25%"></div>
+                        </div>
+                        <div class="bg-body border mycircle text-dark  text-center mb-1 myitem">2</div>
+                        <p class="text-nowrap myfont">付款與運送方式</p>
+                    </div>
+                    <div class="col-3 d-flex justify-content-center align-items-center flex-column">
+                        <div class="progress p-0 position-absolute mywidth-2" role="progressbar" style="top:16%; left: 46%; height: 10%; width: 8%;">
+                            <div class="progress-bar" style="width: 0%"></div>
+                        </div>
+                        <div class="bg-body border mycircle text-dark  text-center mb-1 myitem">3</div>
+                        <p class="text-nowrap myfont">填寫資料</p>
+                    </div>
+                    <div class="col-3 d-flex justify-content-center align-items-center flex-column">
+                        <div class="progress p-0  position-absolute mywidth-3" role="progressbar" style="top:16%; left: 71%; height: 10%;  width: 8%;">
+                            <div class="progress-bar" style="width: 0%"></div>
+                        </div>
+                        <div class="bg-body border mycircle text-dark  text-center mb-1 myitem">4</div>
+                        <p class="text-nowrap myfont">完成訂購</p>
+                    </div>
+                </div>
+                <hr>
+                <h5 class="mb-5">訂單明細</h5>
+                <div class="row">
+                    <div class="col-12 d-flex align-items-center flex-wrap">
+                        <div class="d-flex justify-content-center align-items-center col-sm-1 col-6 ">
+                            <img class="mycircle border border-dark" src="./img/skin/02.webp" alt="" style="width: 50px; height: 50px;">
+                        </div>
+                        <div class="p-2 col-sm-7 col-6">
+                            <h5>Air Jordan 1 - Travis Scott</h5>
+                            <p class="m-0">#340554</p>
+                        </div>
+                        <div class="d-flex justify-content-end col-sm-3 col-6">
+                            <button class="btn minusBtn" type="button" id="button-addon1">-</button>
+                            <input type="text" class="form-control itemCount" value="1" style="width: 35px;">
+                            <button class="btn plusBtn" type="button" id="button-addon1">+</button>
+                        </div>
+                        <div class="col-sm-1 col-6">$<span class="countMoney">464</span></div>
+                    </div>
+                    <hr>
+                    <div class="col-12 d-flex align-items-center flex-wrap">
+                        <div class="d-flex justify-content-center align-items-center col-sm-1 col-6">
+                            <img class="mycircle border border-dark" src="./img/skin/01.webp" alt="" style="width: 50px; height: 50px;">
+                        </div>
+                        <div class="p-2 col-sm-7 col-6">
+                            <h5>Air Jordan 1 - Chicago</h5>
+                            <p class="m-0">#204035</p>
+                        </div>
+                        <div class="d-flex justify-content-end col-sm-3 col-6">
+                            <button class="btn minusBtn" type="button" id="button-addon1">-</button>
+                            <input type="text" class="form-control itemCount" value="1" style="width: 35px;">
+                            <button class="btn plusBtn" type="button" id="button-addon1">+</button>
+                        </div>
+                        <div class="col-sm-1 col-6">$<span class="countMoney">281</span></div>
+                    </div>
+                    <hr>
+                    <div class="col-12 d-flex align-items-center flex-wrap">
+                        <div class="d-flex justify-content-center align-items-center col-sm-1 col-6 ">
+                            <img class="mycircle border border-dark" src="./img/skin/03.webp" alt="" style="width: 50px; height: 50px;">
+                        </div>
+                        <div class="p-2 col-sm-7 col-6">
+                            <h5>Nike vaporwaffle-Sacai</h5>
+                            <p class="m-0">#883845</p>
+                        </div>
+                        <div class="d-flex justify-content-end col-sm-3 col-6">
+                            <button class="btn minusBtn" type="button" id="button-addon1" >-</button>
+                            <input type="text" class="form-control itemCount" value="1" style="width: 35px;">
+                            <button class="btn plusBtn" type="button" id="button-addon1">+</button>
+                        </div>
+                        <div class="col-sm-1 col-6">$<span class="countMoney">256</span></div>
+                    </div>
+                    <hr class="mb-4">
+                    <div class="row justify-content-end">
+                        <div class="col-sm-4  col-6 mb-3">
+                            <div class="d-flex justify-content-between align-items-center ">
+                                <span>數量:</span>
+                                <span class=" items"></span>
+                            </div>
+                            <div class="d-flex justify-content-between align-items-center">
+                                <span>小計:</span>
+                                <span class=" allItemPrice">$</span>
+                            </div>
+                            <div class="d-flex justify-content-between align-items-center">
+                                <span>手續費:</span>
+                                <span class=" fee" >$</span>
+                            </div>
+                            <div class="d-flex justify-content-between align-items-center">
+                                <span>總計:</span>
+                                <span class=" totalPrice">$</span>
+                            </div>
+                        </div>
+                    </div>
+                    <hr class="mb-4">
+                    <div class="row">
+                        <div class="col-sm-6 col-12 d-flex justify-content-sm-start justify-content-center mb-sm-0 mb-2">
+                            <a class="icon-link icon-link-hover text-dark text-decoration-none" href="#" style="--bs-icon-link-transform: translate3d(-.125rem, 0, 0);">
+                                <i class="bi bi-arrow-left mb-2"></i>
+                                返回購物
+                              </a>
+                        </div>
+                        <div class="col-sm-6 col-12 d-flex justify-content-sm-end justify-content-center">
+                            <a href="./BSS-Shop2.html"><button type="button" class="btn btn-primary">下一步</button></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+    <footer class="shadow-lg">
+        <div class="container text-center p-3">
+            <div class="row">
+              <div class="col-lg-4 col-12 d-flex flex-column align-items-lg-start ">
+                <div>
+                    <img src="./img/logo/logo1.png" alt="" width="35" height="30">
+                    <span>ShoeOwn</span>
+                </div>
+                <p>Sale and Buy your collection</p>
+              </div>
+              <div class="col-lg-8  col-12 d-flex flex-wrap">
+                <div class="col-xl-3 col-lg-6 col-12 ">
+                    <ul class="list-unstyled">
+                        <h5>ShoeOwn</h5>
+                        <li>關於ShouOwn</li>
+                        <li>合作關係</li>
+                        <li>隱私與服務條款</li>
+                    </ul>
+                </div>
+                <div class="col-xl-3 col-lg-6 col-12">
+                    <ul class="list-unstyled">
+                        <h5>支援</h5>
+                        <li>購物</li>
+                        <li>購物指南</li>
+                        <li>常見問題</li>
+                    </ul>
+                </div>
+                <div class="col-xl-3 col-lg-6 col-12">
+                    <ul class="list-unstyled">
+                        <h5>賣東西</h5>
+                        <li>在ShoeOwn上銷售</li>
+                        <li>服務費政策</li>
+                        <li>常見問題</li>
+                    </ul>
+                </div>
+                <div class="col-xl-3 col-lg-6 col-12">
+                    <ul class="list-unstyled">
+                        <h5>聯絡我們</h5>
+                        <li>統編：</li>
+                        <li>聯絡電話：</li>
+                        <li>工作時段：</li>
+                        <li>寄信給我們</li>
+                    </ul>
+                </div>
+              </div>
+            </div>
+        </div>
+        <div class="container-fluid p-0">
+            <div class="bg-secondary d-flex justify-content-between p-3">
+                <span> ©2024 Tailblocks - @knyttneve</span>
+                <div class="col-lg-1 col-2 d-flex justify-content-between">
+                    <a href="" class="text-light"><i class="bi bi-facebook"></i></a>
+                    <a href="" class="text-light"><i class="bi bi-twitter"></i></a>
+                    <a href="" class="text-light"><i class="bi bi-instagram"></i></a>
+                    <a href="" class="text-light"><i class="bi bi-linkedin"></i></a>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+    <script>
+        const minusBtn = document.querySelectorAll('.minusBtn');
+        const plusBtn = document.querySelectorAll('.plusBtn');
+        const itemCount = document.querySelectorAll('.itemCount');
+        const countMoney = document.querySelectorAll('.countMoney');
+        // 將商品定價儲存
+        const priceList = [];
+        countMoney.forEach((price) => {
+            priceList.push(Number(price.textContent));
+        });
+
+        function countAll() {
+            const items = document.querySelector('.items');
+            const allItemPrice = document.querySelector('.allItemPrice');
+            const fee = document.querySelector('.fee');
+            const totalPrice = document.querySelector('.totalPrice');
+            let item = 0;
+            let allPrice = 0;
+            for (i = 0; (i < itemCount.length); i++) {
+                item += Number(itemCount[i].value);
+                allPrice += Number(countMoney[i].textContent);
+            };
+            items.textContent = item;
+            allItemPrice.textContent = allPrice.toFixed(2);
+            fee.textContent = Math.round(allPrice * 0.01).toFixed(2);
+            totalPrice.textContent = (Number(allItemPrice.textContent) + Number(fee.textContent)).toFixed(2);
+
+        }
+
+        countAll()
+
+        minusBtn.forEach((item, index) => {
+            item.addEventListener('click', function() {
+                let num = Number(itemCount[index].value) - 1;
+                if (num < 1) {
+                    alert('至少購買一件物品');
+                }
+                else {
+                    itemCount[index].value = num;
+                    let newCountMoney = (Number(countMoney[index].textContent) - priceList[index]);
+                    countMoney[index].textContent = newCountMoney;
+                    countAll()
+                }  
+            });
+        });
+
+        plusBtn.forEach((item, index) => {
+            item.addEventListener('click', function() {
+                let num = Number(itemCount[index].value) + 1;
+                if (num > 3) {
+                    alert('至多購買三件')
+                }
+                else {
+                    itemCount[index].value = num;
+                    let newCountMoney = (Number(countMoney[index].textContent) + priceList[index]);
+                    countMoney[index].textContent = newCountMoney;
+                    countAll()
+                }  
+            });
+        });
+    </script>
+  </body>
+</html>
